@@ -1,11 +1,11 @@
 from distutils.core import setup
-import py2exe, sys, os
+import py2exe, sys
 
-class Target:
+class Target():
     def __init__(self, **kw):
         self.__dict__.update(kw)
         self.author = "Kevin Gryspeerd"
-        self.name = "DLS x64 Update"
+        self.name = "Update DLS File to x64"
         self.version = "1.0.0.0"
 
 if len(sys.argv) == 1:
@@ -14,12 +14,12 @@ if len(sys.argv) == 1:
 
 target = Target(
     script = "DLS_x64_Migration.py",
-    description = "Replace the DLS.ini contents with x64 updates and remove the VC.ini file from each subfolder.",
+    description = "This program is designed to replace the contents of the DLS.ini file within subfolders under each user profile and deletes the VC.ini in each of the subfolders. The changes made within the file update it from an x86 edition to x64",
     dest_base = "DLS_Program",
 )
 
 setup(
-    options = {"py2exe": {"bundle_files": 1, "compressed": 1,}},
-    console = [target],
+    options = {'py2exe': {'bundle_files': 1, 'compressed': True}},
     zipfile = None,
+    console = [target],
 )

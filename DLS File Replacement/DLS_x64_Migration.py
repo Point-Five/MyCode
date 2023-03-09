@@ -23,9 +23,9 @@ def overwrite_userprofile_file(passed_userprofile, passed_folder):
         with open(userprofile_file, 'r+') as file:
             file.write("[CheckVer]\n")
             file.write(f"CmdPath=C:\\Program Files\\Microsoft Office\\root\\Office16\\MSACCESS.EXE {passed_userprofile}\\{passed_folder}\\DLS64.ACCDE\n")
-            file.write(f"CheckPath=C:\\DLS\\{passed_folder}\\UPDATE.INI\n")
+            file.write(f"CheckPath=C:\\DLS\\UPDATE.INI\n")
             file.write(f"OldVerPath={passed_userprofile}\\{passed_folder}\\DLS64.ACCDE\n")
-            file.write(f"NewVerPath=C:\\DLS\\{passed_folder}\\DLS64.ACCDE\n")
+            file.write(f"NewVerPath=C:\\DLS\\DLS64.ACCDE\n")
             file.write(f"VCPath={passed_userprofile}\\{passed_folder}\\VC.INI\n")
             file.write("PgrmCode=DLS\n")
             file.write("AutoCopy=Y")
