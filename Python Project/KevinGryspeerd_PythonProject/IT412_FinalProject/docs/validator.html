@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module validator</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>validator</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cgrysp%5Cdocuments%5Cit412_kgryspee%5Cweek_08_09_10_finalproject%5Cclasses%5Cvalidator.py">c:\users\grysp\documents\it412_kgryspee\week_08_09_10_finalproject\classes\validator.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="validator.html#Validator">Validator</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Validator">class <strong>Validator</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;class&nbsp;that&nbsp;allows&nbsp;for&nbsp;data&nbsp;validation.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Validator-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>The&nbsp;constructor&nbsp;for&nbsp;intializing&nbsp;the&nbsp;validator&nbsp;class.</tt></dd></dl>
+
+<dl><dt><a name="Validator-listOfUsaStates"><strong>listOfUsaStates</strong></a>(self)</dt><dd><tt>Returns&nbsp;a&nbsp;dictionary&nbsp;list&nbsp;of&nbsp;all&nbsp;50&nbsp;states&nbsp;and&nbsp;their&nbsp;abbreviations</tt></dd></dl>
+
+<dl><dt><a name="Validator-validateAddressLine"><strong>validateAddressLine</strong></a>(self, passed_value)</dt><dd><tt>Validates&nbsp;that&nbsp;the&nbsp;passed&nbsp;value&nbsp;meets&nbsp;the&nbsp;parameters&nbsp;for&nbsp;inserting&nbsp;an&nbsp;address.<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;variable&nbsp;to&nbsp;be&nbsp;tested&nbsp;as&nbsp;the&nbsp;address&nbsp;line.<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;or&nbsp;False&nbsp;Boolean</tt></dd></dl>
+
+<dl><dt><a name="Validator-validateCityName"><strong>validateCityName</strong></a>(self, passed_value)</dt><dd><tt>Validates&nbsp;the&nbsp;value&nbsp;of&nbsp;a&nbsp;city.<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;variable&nbsp;that&nbsp;will&nbsp;have&nbsp;a&nbsp;city&nbsp;name&nbsp;validated.<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;or&nbsp;False&nbsp;Boolean</tt></dd></dl>
+
+<dl><dt><a name="Validator-validateCompanyName"><strong>validateCompanyName</strong></a>(self, passed_value)</dt><dd><tt>Validates&nbsp;the&nbsp;name&nbsp;is&nbsp;of&nbsp;correct&nbsp;length&nbsp;and&nbsp;characters<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;passed&nbsp;company&nbsp;name&nbsp;to&nbsp;check.<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;or&nbsp;False&nbsp;Boolean</tt></dd></dl>
+
+<dl><dt><a name="Validator-validateEmailAddress"><strong>validateEmailAddress</strong></a>(self, passed_value)</dt><dd><tt>Validates&nbsp;that&nbsp;the&nbsp;passed&nbsp;value&nbsp;is&nbsp;a&nbsp;valid&nbsp;email&nbsp;address.<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;An&nbsp;email&nbsp;address&nbsp;that&nbsp;will&nbsp;be&nbsp;parameter&nbsp;checked.<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;or&nbsp;False&nbsp;Boolean</tt></dd></dl>
+
+<dl><dt><a name="Validator-validatePersonsName"><strong>validatePersonsName</strong></a>(self, passed_value)</dt><dd><tt>Validates&nbsp;that&nbsp;the&nbsp;passed&nbsp;name&nbsp;is&nbsp;of&nbsp;valid&nbsp;characters<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;variable&nbsp;that&nbsp;is&nbsp;passed&nbsp;and&nbsp;checked&nbsp;for&nbsp;alphabetic&nbsp;letters,&nbsp;single&nbsp;quotations,&nbsp;or&nbsp;hyphens.<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;or&nbsp;False&nbsp;Boolean</tt></dd></dl>
+
+<dl><dt><a name="Validator-validatePhoneNumber"><strong>validatePhoneNumber</strong></a>(self, passed_value)</dt><dd><tt>Validates&nbsp;that&nbsp;the&nbsp;passed&nbsp;value&nbsp;is&nbsp;of&nbsp;the&nbsp;correct&nbsp;parameters&nbsp;for&nbsp;a&nbsp;phone&nbsp;number.<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;phone&nbsp;number&nbsp;being&nbsp;checked.<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;or&nbsp;False&nbsp;Boolean</tt></dd></dl>
+
+<dl><dt><a name="Validator-validateStateAbbreviation"><strong>validateStateAbbreviation</strong></a>(self, passed_value)</dt><dd><tt>Validates&nbsp;that&nbsp;the&nbsp;passed&nbsp;abbreviation&nbsp;is&nbsp;one&nbsp;of&nbsp;the&nbsp;United&nbsp;States&nbsp;two&nbsp;character&nbsp;codes.<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;variable&nbsp;that&nbsp;passes&nbsp;a&nbsp;value&nbsp;to&nbsp;be&nbsp;checked&nbsp;for&nbsp;one&nbsp;of&nbsp;the&nbsp;two&nbsp;letter&nbsp;codes&nbsp;of&nbsp;a&nbsp;United&nbsp;State's&nbsp;State.<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;or&nbsp;False&nbsp;Boolean</tt></dd></dl>
+
+<dl><dt><a name="Validator-validateZipCode"><strong>validateZipCode</strong></a>(self, passed_value)</dt><dd><tt>Validates&nbsp;that&nbsp;value&nbsp;passsed&nbsp;is&nbsp;a&nbsp;whole&nbsp;number&nbsp;that&nbsp;is&nbsp;either&nbsp;4&nbsp;or&nbsp;5&nbsp;digits&nbsp;long<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;True&nbsp;or&nbsp;False&nbsp;Boolean</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

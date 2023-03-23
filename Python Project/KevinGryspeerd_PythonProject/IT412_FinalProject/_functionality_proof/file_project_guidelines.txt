@@ -1,0 +1,47 @@
+Final Project
+Completion requirements
+Opened: Monday, February 27, 2023, 6:00 AM
+Due: Monday, March 20, 2023, 11:55 PM
+The final project is a synthesis of everything you have learned to date about Python and is based on some real-world projects I have encountered in the past.
+
+For this scenario, you are going to pretend that you have an IT system that spits out data like the file below:
+
+customer_export.txt (right click, save link as)
+
+Your job is to take this data and:
+
+Re-format into a JSON file (called customers.json) so it can be imported into another IT system
+Re-format it into CSV format (called customers.csv) so it can be imported into yet another IT system
+Add it to two other databases tables that power other applications (see the previous link in this module for more details)
+The data file you get doesn't always have "clean" data coming out of it, so you will have to work out how to deal with that problem (you may not manually edit the original file, however!). It also must make an attempt to remove duplicate information. Fields between the two database tables and the original file are not the same, so you will have to figure out how to get your data set to load into each database properly.
+
+When your program loads, you must provide the user with the following options:
+
+Import a new data file
+Show data currently in a database
+Add a record to the databases (anything you add must be added to both databases)
+Edit a record (you must have the user choose which database they'd like to edit the record on, then have them tell you which record to edit, then tell you which field they'd like to edit).
+Quit the program.
+Your program must not terminate unless a user selects option #5.
+
+When a user imports data from a file, all data currently in the databases is removed before importing. Files on the file system must be backed up before being overwritten.
+
+When a user chooses to show data currently in a database, allow them to choose which database they'd like to show data for. You must print out each individual row of data using a loop, not by printing out the variable containing all of your data.
+
+When a user adds or edits a record (your data set is already cleaned up), you must validate the input according to the following rules:
+
+First and last name information must be comprised of primarily upper and lower case letters. Single quote [ ' ] and dash [-] characters are also allowed, as are spaces.
+Company name can literally have anything in it, but be very careful about quote characters!
+The address must be comprised primarily of alphanumeric characters, but must not contain any of the following characters: ! " ' @ $ % ^ & * _  = + < >  ? ; [ ] { }
+City information must be comprised of primarily upper and lower case letters. Single quote [ ' ] characters and spaces are also allowed.
+State information will always be two uppercase letters
+ZIP code information will always be a whole number that's either 4 or 5 digits long.
+Phone numbers must only be comprised of digits and the dash [-] character.
+The email address must be comprised primarily of alphanumeric characters, but must not contain any of the following characters: ! " ' # $ % ^ & * ( )  = + , < > / ? ; : [ ] { } \ 
+When a user wishes to remove a record (you need to determine how best to implement this), please have the user confirm the deletion of the record before removing it.
+
+The rest of your implementation details are up to your discretion, applying the things you have learned about Python in your program at Walsh. Please note, however, that you must organize any classes/functions into modules and produce documentation (using Pydoc) for your work using the principles discussed in your program of study. You must also include exception handling in your code according to the principles previously discussed.
+
+You must also create a set of test cases for all reasonable (think this through carefully!) parts of your application applying the principles discussed in the class. 
+
+Be sure to put comments in your code that clearly mark how you are performing your program logic. In the submission comments of this assignment, please place the repository URL of your file submission.

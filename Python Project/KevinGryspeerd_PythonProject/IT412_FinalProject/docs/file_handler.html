@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module file_handler</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>file_handler</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cgrysp%5Cdocuments%5Cit412_kgryspee%5Cweek_08_09_10_finalproject%5Cclasses%5Cfile_handler.py">c:\users\grysp\documents\it412_kgryspee\week_08_09_10_finalproject\classes\file_handler.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="csv.html">csv</a><br>
+<a href="json.html">json</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="shutil.html">shutil</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="file_handler.html#File_Handler">File_Handler</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="File_Handler">class <strong>File_Handler</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#File_Handler">File_Handler</a>(passed_directory='text_files')<br>
+&nbsp;<br>
+A&nbsp;class&nbsp;that&nbsp;handles&nbsp;manupulation&nbsp;of&nbsp;data<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="File_Handler-__init__"><strong>__init__</strong></a>(self, passed_directory='text_files')</dt><dd><tt>Initialize&nbsp;an&nbsp;instance&nbsp;of&nbsp;the&nbsp;file&nbsp;manager&nbsp;class.</tt></dd></dl>
+
+<dl><dt><a name="File_Handler-backupCsvAndJsonFiles"><strong>backupCsvAndJsonFiles</strong></a>(self)</dt><dd><tt>Creates&nbsp;a&nbsp;backup&nbsp;of&nbsp;all&nbsp;csv&nbsp;and&nbsp;json&nbsp;files&nbsp;within&nbsp;the&nbsp;text_files&nbsp;directory</tt></dd></dl>
+
+<dl><dt><a name="File_Handler-convertPipedStringToList"><strong>convertPipedStringToList</strong></a>(self, passed_string)</dt><dd><tt>Takes&nbsp;a&nbsp;passed&nbsp;string&nbsp;and&nbsp;cleans&nbsp;it&nbsp;for&nbsp;processing.<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;cleaned&nbsp;list&nbsp;item&nbsp;to&nbsp;process.</tt></dd></dl>
+
+<dl><dt><a name="File_Handler-dictList_ExportToCsv"><strong>dictList_ExportToCsv</strong></a>(self, passed_list, output_file_name)</dt><dd><tt>Exports&nbsp;a&nbsp;python&nbsp;list&nbsp;of&nbsp;dictionary&nbsp;items&nbsp;to&nbsp;a&nbsp;csv&nbsp;file.<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_list:&nbsp;a&nbsp;list&nbsp;of&nbsp;dictionaries,&nbsp;output_file_name:&nbsp;the&nbsp;file&nbsp;that&nbsp;will&nbsp;be&nbsp;written&nbsp;to.</tt></dd></dl>
+
+<dl><dt><a name="File_Handler-dictList_ExportToJson"><strong>dictList_ExportToJson</strong></a>(self, passed_list, output_file_name)</dt><dd><tt>Exports&nbsp;a&nbsp;python&nbsp;list&nbsp;of&nbsp;dictionary&nbsp;items&nbsp;to&nbsp;a&nbsp;json&nbsp;file.<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_list:&nbsp;a&nbsp;list&nbsp;of&nbsp;dictionaries,&nbsp;output_file_name:&nbsp;the&nbsp;file&nbsp;that&nbsp;will&nbsp;be&nbsp;written&nbsp;to.</tt></dd></dl>
+
+<dl><dt><a name="File_Handler-dictList_RemoveDuplicates"><strong>dictList_RemoveDuplicates</strong></a>(self, passed_list)</dt><dd><tt>Removes&nbsp;duplicate&nbsp;records&nbsp;from&nbsp;a&nbsp;list&nbsp;of&nbsp;dictionary&nbsp;items.<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passed_list:&nbsp;A&nbsp;python&nbsp;list&nbsp;filled&nbsp;with&nbsp;dictionary&nbsp;items<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;cleaned&nbsp;pythin&nbsp;list&nbsp;of&nbsp;dictionary&nbsp;items&nbsp;that&nbsp;have&nbsp;duplicates&nbsp;removed.</tt></dd></dl>
+
+<dl><dt><a name="File_Handler-getHeader"><strong>getHeader</strong></a>(self, passed_string)</dt><dd><tt>Takes&nbsp;a&nbsp;passed&nbsp;string&nbsp;and&nbsp;cleans&nbsp;the&nbsp;data&nbsp;for&nbsp;a&nbsp;header&nbsp;file.<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;cleaned&nbsp;list&nbsp;with&nbsp;no&nbsp;new&nbsp;line&nbsp;characters,&nbsp;no&nbsp;empty&nbsp;records.</tt></dd></dl>
+
+<dl><dt><a name="File_Handler-importNewTextFile"><strong>importNewTextFile</strong></a>(self, passed_file)</dt><dd><tt>Imports&nbsp;the&nbsp;data&nbsp;from&nbsp;a&nbsp;text&nbsp;file&nbsp;and&nbsp;backs&nbsp;up&nbsp;existing&nbsp;csv&nbsp;and&nbsp;json&nbsp;files.</tt></dd></dl>
+
+<dl><dt><a name="File_Handler-removePoundSymbol"><strong>removePoundSymbol</strong></a>(self, passed_string)</dt><dd><tt>Removes&nbsp;the&nbsp;pound&nbsp;symbol&nbsp;from&nbsp;a&nbsp;string&nbsp;of&nbsp;characters<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;cleaned&nbsp;string&nbsp;with&nbsp;no&nbsp;pound&nbsp;symbol&nbsp;characters.</tt></dd></dl>
+
+<dl><dt><a name="File_Handler-validateFileExists"><strong>validateFileExists</strong></a>(self, passed_path)</dt><dd><tt>Checks&nbsp;to&nbsp;see&nbsp;if&nbsp;a&nbsp;file&nbsp;exists,&nbsp;and&nbsp;returns&nbsp;a&nbsp;true&nbsp;or&nbsp;false&nbsp;boolean.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
